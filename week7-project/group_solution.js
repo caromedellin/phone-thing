@@ -86,3 +86,20 @@ encapsulated by their names - i.e., Sum, Mean, and Median. Hope this
 helps, or at least makes things clear enough to get the message through!
 Good luck!
 */
+
+// Loved the message! (This is Carolina) I'll start on function 1
+//Function 1: Sum
+//Input: an array of integers
+//Output: an integer (the sum of all the integers in the input array)
+//Steps:
+
+//Create a function called Sum that accepts an array of integers as its
+//input.
+var Sum = function (array){
+
+};
+
+//Define a variable called arraySum that will be equal to the value that
+//is the sum of all the integers in the input array.
+//Return the value of arraySum (i.e., the sum of all the integers in the
+//input array).

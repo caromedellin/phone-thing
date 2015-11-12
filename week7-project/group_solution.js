@@ -115,4 +115,6 @@ var Sum = function (array){
   var arraySum = array.reduce((a, b) => a + b);
   return arraySum;
 };
-console.log(Sum(array));
+console.log(Sum(array)); //driver code for me
+
+//-----------SECOND FUNCTION-------------------

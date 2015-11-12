@@ -103,9 +103,16 @@ var array = [1,2,3,4,5,6,7,8,9,10,11]
 
 //Define a variable called arraySum that will be equal to the value that
 //is the sum of all the integers in the input array.
-var Sum = function (array){
-  var arraySum = array.join('+');
-};
-console.log(Sum(array));
+
+// var Sum = function (array){
+//   var arraySum = array.reduce((a, b) => a + b);
+// };
+// console.log(Sum(array));
+
 //Return the value of arraySum (i.e., the sum of all the integers in the
 //input array).
+var Sum = function (array){
+  var arraySum = array.reduce((a, b) => a + b);
+  return arraySum;
+};
+console.log(Sum(array));

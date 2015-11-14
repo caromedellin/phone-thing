@@ -118,3 +118,86 @@ var Sum = function (array){
 console.log(Sum(array)); //driver code for me
 
 //-----------SECOND FUNCTION-------------------
+// Function 2: Mean
+// Input: an array of integers
+// Output: an integer (the sum of all the integers in the input array,
+// divided by the number of integers in the array)
+var integers = [1,2,3,5,6,7,8,9,10,11,12,13];
+// Steps:
+// Create a function called Mean that accepts an array of integers as its
+// input.
+
+// var Mean = function(integers){};
+
+
+// Define a variable called arrayLength that is equal to the number of
+// integers in the array.
+
+// var Mean = function(integers){
+//   var arrayLength = integers.length;
+//   console.log(arrayLength);
+// };
+// Mean(integers);
+
+// Define a variable called arraySum that will be equal to the value that
+// is the sum of all the integers in the input array.
+
+// var Mean = function(integers){
+//   var arrayLength = integers.length;
+//   var arraySum = integers.reduce((a, b) => a + b);
+//   console.log(arraySum);
+// };
+// Mean(integers);
+
+// Define a variable called arrayMean that returns the result of dividing
+// arraySum by arrayLength (i.e., arrayMean = arraySum/arrayLength).
+// Return the value of arrayMean.
+
+var Mean = function(integers){
+  var arrayLength = integers.length;
+  var arraySum = integers.reduce((a, b) => a + b);
+  var arrayMean = arraySum /arrayLength;
+  console.log(arrayMean);
+};
+Mean(integers);
+
+// Function 3: Median
+// Input: an array of integers
+// Output: an integer (see steps below for clarification of what this
+// integer is)
+// Steps:
+// Create a variable called oddMedianIndex.
+// Create a variable called evenMedianIndex1.
+// Create a variable called evenMedianIndex2.
+// Create a variable called evenMedianOutput.
+// Sort the integers in the array so that they ascend from lowest to
+// highest.
+// Determine whether the input array has an even or odd number of
+// integers.
+// If the input array has an odd number of integers:
+//   divide the number of integers in the array by 2.
+//   round UP this result to the next integer.
+//   Set the variable oddMedianIndex equal to the result of the previous
+//   two steps.
+//   Look up the integer in the input array that is located at
+//   oddMedianIndex's position.
+//   Return the integer located at oddMedianIndex's position.
+//   END.
+// If the input array has an even number of integers:
+//   divide the number of integers in the array by 2.
+//   Set evenMedianIndex1 equal to the result of the previous step.
+//   divide the number of integers in the array by 2, again.
+//   Set evenMedianIndex2 equal to (the result of previous step + 1)
+//     i.e., you're going to want these two results to give you the index
+//     values of the "middle two" integers in the array.
+//   Look up the integers in the array that are located at the index
+//   values stored as evenMedianIndex1 and evenMedianIndex2.
+//   Add these 2 integers together.
+//     i.e., the values of 2 integers in the array, don't add
+//     evenMedianIndex1 and evenMedianIndex2 together.
+//   Divide the result of adding these "middle two" integers together by
+//   2.
+//     i.e., you're taking the average of these two integers.
+//   Set evenMedianOutput equal to the result of this division.
+//   Return evenMedianOutput.
+//   END.

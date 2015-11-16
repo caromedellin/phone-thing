@@ -266,3 +266,40 @@ console.log("Median of integers = [1,2,3,5,6,7,8,9,10,11,12,13]: ");
 console.log(median([1,2,3,5,6,7,8,9,10,11,12,13]));
 console.log("Median of array = [1,2,3,5,6,7,8,9,10,11,12]: ");
 console.log(median([1,2,3,5,6,7,8,9,10,11,12]));
+
+___________________________________________________________________________________
+
+// Release 4 - Part 2: Translate to User stories
+// Person 6: Dan Andersen
+
+
+
+// Function 1: var sum = function(integers_array) {
+
+// As a user, I want to take a list of numbers and enter them into this function.
+// The function needs to take all of the numbers and add them together. Once the
+// total is calculated, the function should return a readable sentence that lists
+// the original list of numbers and states what their summed total is.
+//     eg: Sum of [1, 2, 3, 4]: 10
+
+
+
+// Function 2: var mean = function(integers_array){
+
+// As a user, I want to take a list of numbers and use the sum function on them
+// to calculate the total. Then I want to divide that number by the number of values
+// in my original list. When I run my mean function on a list of numbers I want to
+// recieve a printout with the list of numbers and a statement including what the
+// mean of those numbers is.
+//     eg: Mean of [1, 2, 3, 4]: 2.5
+
+
+
+// Function 3: var median = function(numbersArray) {
+
+// As a user, I want to take a list of numbers and when I run the median function
+// on them, the numbers must be put in order from smallest to largest. Next, the
+// function must locate the middle number and print out that number as the median.
+// If there are an even number of values, the function must take the average of
+// the two middle-most numbers and return that as the median.
+//     eg: Median of [1, 2, 3, 4]: 2.5

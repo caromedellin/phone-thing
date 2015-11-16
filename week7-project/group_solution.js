@@ -225,3 +225,44 @@ var Median = function(array) {
 }
 }
 console.log(Median(array));
+
+
+
+
+
+
+/*
+  Release 4 part 1: Refactor
+  Person 5: Refactor (by Bernice Anne W. Chua)
+*/
+var sum = function(integers_array){
+  return integers_array.reduce((a, b) => a + b);
+};
+console.log("Sum of [1, 2, 3, 4]: " + sum([1, 2, 3, 4]));
+console.log("Sum of [1, 2, 3, 4, 5]: " + sum([1, 2, 3, 4, 5]));
+console.log("Sum of integers = [1,2,3,5,6,7,8,9,10,11,12,13]: " + sum(integers));
+
+var mean = function(integers_array){
+  return Sum(integers_array) / integers_array.length;
+};
+console.log("Mean of [1, 2, 3, 4]: " + mean([1, 2, 3, 4]));
+console.log("Mean of [1, 2, 3, 4, 5]: " + mean([1, 2, 3, 4, 5]));
+console.log("Mean of integers = [1,2,3,5,6,7,8,9,10,11,12,13]: " + mean(integers));
+
+var median = function(numbersArray) {
+  var sortedNumbers = numbersArray.sort();  // Numbers need to be in order to find the median.
+  var middleIndexOfNumbers = sortedNumbers.length / 2;
+  if (sortedNumbers.length % 2 === 0) {
+    return (sortedNumbers[(middleIndexOfNumbers) - 1] + sortedNumbers[middleIndexOfNumbers]) / 2.0;
+    // I put "- 1" because the index of an array starts at zero.
+  } else {
+    return sortedNumbers[Math.floor(sortedNumbers.length / 2)];
+    // I put "- 1" because the index of an array starts at zero.
+  }
+};
+console.log("Median of [1, 2, 3, 4]: " + median([1, 2, 3, 4]));
+console.log("Median of [1, 2, 3, 4, 5]: " + median([1, 2, 3, 4, 5]));
+console.log("Median of integers = [1,2,3,5,6,7,8,9,10,11,12,13]: ");
+console.log(median([1,2,3,5,6,7,8,9,10,11,12,13]));
+console.log("Median of array = [1,2,3,5,6,7,8,9,10,11,12]: ");
+console.log(median([1,2,3,5,6,7,8,9,10,11,12]));

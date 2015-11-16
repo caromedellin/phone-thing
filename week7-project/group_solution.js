@@ -111,6 +111,7 @@ var array = [1,2,3,4,5,6,7,8,9,10,11]
 
 //Return the value of arraySum (i.e., the sum of all the integers in the
 //input array).
+
 var Sum = function (array){
   var arraySum = array.reduce((a, b) => a + b);
   return arraySum;
@@ -122,7 +123,7 @@ console.log(Sum(array)); //driver code for me
 // Input: an array of integers
 // Output: an integer (the sum of all the integers in the input array,
 // divided by the number of integers in the array)
-var integers = [1,2,3,5,6,7,8,9,10,11,12,13];
+ var integers = [1,2,3,5,6,7,8,9,10,11,12,13];
 // Steps:
 // Create a function called Mean that accepts an array of integers as its
 // input.
@@ -161,7 +162,7 @@ var Mean = function(integers){
 };
 Mean(integers);
 
-// Function 3: Median
+// Function 3: Median (Syema Ailia)
 // Input: an array of integers
 // Output: an integer (see steps below for clarification of what this
 // integer is)
@@ -183,6 +184,19 @@ Mean(integers);
 //   oddMedianIndex's position.
 //   Return the integer located at oddMedianIndex's position.
 //   END.
+
+var array = [1,2,3,5,6,7,8,9,10,11,12]
+
+var Median = function(array) {
+  var integerLength = array.length;
+  if (integerLength % 2 !== 0)  {
+  var odd_num = integerLength / 2;
+  oddMedianIndex = Math.ceil(odd_num);
+  return array[oddMedianIndex]
+}
+}
+console.log(Median(array));
+
 // If the input array has an even number of integers:
 //   divide the number of integers in the array by 2.
 //   Set evenMedianIndex1 equal to the result of the previous step.
@@ -201,3 +215,13 @@ Mean(integers);
 //   Set evenMedianOutput equal to the result of this division.
 //   Return evenMedianOutput.
 //   END.
+var Median = function(array) {
+  var integerLength = array.length;
+  if (integerLength % 2 == 0) {
+  var evenMedianIndex1 = integerLength / 2;
+  var evenMedianIndex2 = (evenMedianIndex1 / 2) + 1;
+  var evenMedianOutput = (array[evenMedianIndex1] + array[evenMedianIndex2]) / 2;
+  return evenMedianOutput;
+}
+}
+console.log(Median(array));
